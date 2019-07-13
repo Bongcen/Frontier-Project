@@ -1,2 +1,7 @@
 # Frontier-Project
-Traffic Light Analysis
+## Traffic Light Analysis
+
+Member
+  - Bong Cen Choi
+  - Gabriel Dejan P.
+  - Joshua Kaven K.
