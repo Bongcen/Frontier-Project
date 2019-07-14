@@ -20,7 +20,7 @@ The annotations are stored as 1 annotation per line with the addition of informa
 Filename;Annotation tag;Upper left corner X;Upper left corner Y;Lower right corner X;Lower right corner Y;Origin file;Origin frame number;Origin track;Origin track frame number
 
 ### Dataset used in this project: 
- Annotation from **frameAnnotationsBULB**
+ Annotation file **frameAnnotationsBULB**
 
 ### Acknowledgements
 > Jensen MB, Philipsen MP, Møgelmose A, Moeslund TB, Trivedi MM. Vision for Looking at Traffic Lights: Issues, Survey, and Perspectives. I E E E Transactions on Intelligent Transportation Systems. 2016 Feb 3;17(7):1800-1815. Available from, DOI: 10.1109/TITS.2015.2509509
