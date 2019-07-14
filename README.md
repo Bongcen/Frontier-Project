@@ -3,7 +3,6 @@
 **Data Source:**
 > [LISA Traffic Light Dataset](https://www.kaggle.com/mbornoe/lisa-traffic-light-dataset)
 
-
 **Team Member:**
   - _Bong Cen Choi_
   - _Gabriel Dejan P._
@@ -24,11 +23,14 @@ Annotation file **frameAnnotationsBULB**
  
 ### Prerequisites
 You'll need the following:
-- [Orange](https://orange.biolab.si/download)
+- [Orange](https://orange.biolab.si/download), tool that help you with the modelling and evaluate
 - Python Language
 
 ### Installing
-1. Open Command Prompt/Orange Command Prompt that have python
+1. Open Command Prompt/Orange Command Prompt that have python and go to your directory
+```bash
+cd Frontier-Project
+```
 2. Run .py program
   ```bash
   python app.py
@@ -40,6 +42,8 @@ You'll need the following:
   ```
 4. Open your browser, and insert the http
 5. Press CTRL+C in your Command Prompt to exit from python
+
+### Running the tests
 
 ### Deployment
 #### Test & Score
