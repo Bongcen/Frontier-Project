@@ -34,10 +34,10 @@ You'll need the following:
   python app.py
   ```
 3. Wait python's execution program untill it's given the http site
-  `
+  ```
   Something like this:
   Running on http://127.0.0.1:8050/
-  `
+  ```
 4. Open your browser, and insert the http
 5. Press CTRL+C in your Command Prompt to exit from python
 
