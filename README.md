@@ -32,9 +32,12 @@ You'll need the following:
 >![testscore](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/Test%26Score.jpg)
 
 #### Confusion Matrix
->- AdaBoost Model ![adaboost](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/confusionMatrix(Adaboost).jpg)
->- Random Forest Model ![randomforest](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/confusionMatrix(RandomForest).jpg)
->- kNN Model ![knn](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/confusionMatrix(KNN).jpg)
+>- AdaBoost Model 
+![adaboost](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/confusionMatrix(Adaboost).jpg)
+>- Random Forest Model 
+![randomforest](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/confusionMatrix(RandomForest).jpg)
+>- kNN Model 
+![knn](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/confusionMatrix(KNN).jpg)
 
 ### Acknowledgements
 > Jensen MB, Philipsen MP, Møgelmose A, Moeslund TB, Trivedi MM. Vision for Looking at Traffic Lights: Issues, Survey, and Perspectives. I E E E Transactions on Intelligent Transportation Systems. 2016 Feb 3;17(7):1800-1815. Available from, DOI: 10.1109/TITS.2015.2509509
