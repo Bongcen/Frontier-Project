@@ -27,6 +27,16 @@ You'll need the following:
 - [Orange](https://orange.biolab.si/download)
 - Python Language
 
+### Installing
+1. Open Command Prompt/Orange Command Prompt that have python
+2. Run .py program
+```bash
+python app.py
+```
+3. Wait python's execution program untill it's given the http site
+4. Open your browser, and insert the http
+5. Press CTRL+C in your Command Prompt to exit from python
+
 ### Deployment
 #### Test & Score
 >![testscore](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/Test%26Score.jpg)
