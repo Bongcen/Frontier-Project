@@ -20,7 +20,7 @@ The annotations are stored as 1 annotation per line with the addition of informa
 Filename;Annotation tag;Upper left corner X;Upper left corner Y;Lower right corner X;Lower right corner Y;Origin file;Origin frame number;Origin track;Origin track frame number
 
 ### Dataset used in this project: 
- Annotation file **frameAnnotationsBULB**
+`Annotation file **frameAnnotationsBULB**`
  
 ### Prerequisites
 You'll need the following:
