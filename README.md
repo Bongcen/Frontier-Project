@@ -24,7 +24,9 @@ Annotation file **frameAnnotationsBULB**
 ### Prerequisites
 You'll need the following:
 - [Orange](https://orange.biolab.si/download), tool that help you with the modelling and evaluate
-- Python Language
+- Python Dash
+- Pandas
+- Plotly
 
 ### Installing
 1. Open Command Prompt/Orange Command Prompt that have python and go to your directory
