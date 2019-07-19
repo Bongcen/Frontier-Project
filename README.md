@@ -55,10 +55,19 @@ pip install pandas
 
 ### Deployment
 #### Test & Score
+In here, we train the data with the best 3 models .
+- The target of this Test & Score evaluation is the "Annotation" Class
+- We used K fold Cross validation with number of folds: 5
+- Stratified: rearrange the data in a way that each fold has a good representation of the whole dataset.
 >![testscore](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/Test%26Score.jpg)
-This test, used 3 different model to train the dataset
+>Area under ROC is the area under the receiver-operating curve.
+>Classification accuracy is the proportion of correctly classified examples.
+>F-1 is a weighted harmonic mean of precision and recall (see below).
+>Precision is the proportion of true positives among instances classified as positive, e.g. the proportion of Iris virginica correctly identified as Iris virginica.
+>Recall is the proportion of true positives among all positive instances in the data, e.g. the number of sick among all diagnosed as sick.
 
 #### Confusion Matrix
+In here, we can see Test & Score output from each model we used to train the data.
 >- AdaBoost Model 
 ![adaboost](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/confusionMatrix(Adaboost).jpg)
 >- Random Forest Model 
