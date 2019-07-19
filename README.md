@@ -4,7 +4,7 @@
 > [LISA Traffic Light Dataset](https://www.kaggle.com/mbornoe/lisa-traffic-light-dataset)
 
 **Team Member:**
-  - _Bong Cen Choi_
+  - [_Bong Cen Choi_](https://github.com/Bongcen)
   - _Gabriel Dejan P._
   - _Joshua Kaven K._
 
