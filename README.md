@@ -23,8 +23,8 @@ Annotation file **frameAnnotationsBULB**
  
 ### Prerequisites
 You'll need the following:
-- [Orange](https://orange.biolab.si/download), tool that help you with the modelling and evaluate
-- Python Dash
+- [Orange](https://orange.biolab.si/download)
+- [Python Dash](https://dash.plot.ly/)
 - Pandas
 - Plotly
 
@@ -33,23 +33,30 @@ You'll need the following:
 ```bash
 cd Frontier-Project
 ```
-2. Run .py program
+2. Install the following library
+```bash
+pip install dash==1.0.2  # The core dash backend (check newest version on dash.plot.ly)
+pip install dash-daq==0.1.0  # DAQ components (newly open-sourced!)
+pip install pandas
+```
+3. Run .py program
   ```bash
   python app.py
   ```
-3. Wait python's execution program untill it's given the http site
-  ```
-  Something like this:
+4. Wait python's execution program untill it's given the http site
+  ```bash
   Running on http://127.0.0.1:8050/
   ```
-4. Open your browser, and insert the http
-5. Press CTRL+C in your Command Prompt to exit from python
+5. Open your browser, and insert the http
+>http://127.0.0.1:8050/
+6. Press CTRL+C in your Command Prompt to exit from python's program
 
 ### Running the tests
 
 ### Deployment
 #### Test & Score
 >![testscore](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/Test%26Score.jpg)
+This test, used 3 different model to train the dataset
 
 #### Confusion Matrix
 >- AdaBoost Model 
