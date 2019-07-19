@@ -67,7 +67,7 @@ In here, we train the data with the best 3 models .
 >- Recall is the proportion of true positives among all positive instances in the data, e.g. the number of sick among all diagnosed as sick.
 
 ### Confusion Matrix
-In here, we can see Test & Score output from each model we used to train the data.
+In here, we can see Test & Score output from each models that used to train the data. The numbers show correctly and incorrectly classified instances.
 >- AdaBoost Model 
 ![adaboost](https://github.com/Bongcen/Frontier-Project/blob/master/Orange%20Documentation/confusionMatrix(Adaboost).jpg)
 >- Random Forest Model 
