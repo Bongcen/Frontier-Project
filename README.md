@@ -54,7 +54,7 @@ pip install pandas
 ## Running the tests
 
 ### Coding Style
-- Graph Bar
+- **Graph Bar**
 ```python
     dcc.Graph(id='bar_plot',
 			figure=go.Figure
@@ -72,12 +72,12 @@ pip install pandas
 			)
 		)
 ```
-- Scatter Plot
+- **Scatter Plot**
 ```python
 
 ```
-- Callback
-Callback is use for updating the plot with the input data. For this example, we used RadioItem as 'RI' and Range Slider as 'no-slider' for the input data. For the output is a Graph as 'clustering'.
+- **Callback**		
+is use for updating the plot with the input data. For this example, we used RadioItem as 'RI' and Range Slider as 'no-slider' for the input data. For the output is a Graph as 'clustering'.
 ```python
 @app.callback(
 	Output('clustering', 'figure'),
