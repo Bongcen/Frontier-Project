@@ -74,30 +74,49 @@ pip install pandas
 ```
 - **Scatter Plot**
 ```python
-
+'data': [
+	go.Scatter(
+		x=dff[dff[selected_methods] == i]['No'],
+		y=dff[dff[selected_methods] == i][selected_methods],
+		text=dff[dff[selected_methods] == i]['day'],
+		mode='markers',
+		opacity=0.7,
+		marker={
+			'size': 15,
+			'line': {'width': 0.5, 'color': 'white'}
+		},
+		name = i
+	) for i in dff.Annotation.unique()
+],
 ```
 - **Dash Core Component**
-	1. RadioItem
-	```python
-	dcc.RadioItems(
-		id='RI',
-		options=[
-			{'label' : i, 'value': i} for i in ['Annotation','RandomForest','kNN','AdaBoost']
-		],
-		value='Annotation',
-		labelStyle={'display': 'inline-block'}
-	)
-	```
-	2. Range Slider
-	```python
-	dcc.RangeSlider(
-		id='no-slider',
-		min=df['No'].min(),
-		max=df['No'].max(),
-		step=1,
-		value=[df['No'].min(), df['No'].max()]
-	)
-	```
+1. RadioItem
+```python
+dcc.RadioItems(
+	id='RI',
+	options=[
+		{'label' : i, 'value': i} for i in ['Annotation','RandomForest','kNN','AdaBoost']
+	],
+	value='Annotation',
+	labelStyle={'display': 'inline-block'}
+)
+```
+2. Range Slider
+```python
+dcc.RangeSlider(
+	id='no-slider',
+	min=df['No'].min(),
+	max=df['No'].max(),
+	step=1,
+	marks={
+		1: 'Day 1',
+		2: 'Night 1',
+		3: 'Day 2',
+		4: 'Night 2'
+	},
+	value=[df['No'].min(), df['No'].max()]
+)
+```
 - **Callback**		
 is use for updating the plot with the input data. In this case, we used RadioItem as 'RI' and Range Slider as 'no-slider' for the input data. For the output is a Graph as 'clustering'.
 ```python
