@@ -5,8 +5,8 @@
 
 **Team Member:**
   - [_Bong Cen Choi_](https://github.com/Bongcen)
-  - _Gabriel Dejan P._
-  - _Joshua Kaven K._
+  - [_Gabriel Dejan P._](https://github.com/gabrieldejan17)
+  - [_Joshua Kaven K._](https://github.com/Nevaks)
 
 ## Content
 The database is collected in San Diego, California, USA. The database provides four day-time and two night-time sequences primarily used for testing, providing 23 minutes and 25 seconds of driving in Pacific Beach and La Jolla, San Diego. The stereo image pairs are acquired using the Point Grey’s Bumblebee XB3 (BBX3-13S2C-60) which contains three lenses which capture images with a resolution of 1280 x 960, each with a Field of View(FoV) of 66°. Where the left camera view is used for all the test sequences and training clips. The training clips consists of 13 daytime clips and 5 nighttime clips.
