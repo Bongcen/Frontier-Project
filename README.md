@@ -52,6 +52,12 @@ pip install pandas
 6. Press CTRL+C in your Command Prompt to exit from python's program
 
 ## Running the tests
+	1. Scatter Graph
+		You can set the slider at the above of the Graph to scale the size of data by the day.
+		Or you can choose the radioitems at the bottom of the Graph, to see which class data you want to be used.
+	2. Bar Graph
+		You can't do any input here.
+![web](https://github.com/Bongcen/Frontier-Project/blob/master/Screenshots/Web.PNG)
 
 ### Coding Style
 - **Graph Bar**
@@ -90,33 +96,33 @@ pip install pandas
 ],
 ```
 - **Dash Core Component**
-1. RadioItem
-```python
-dcc.RadioItems(
-	id='RI',
-	options=[
-		{'label' : i, 'value': i} for i in ['Annotation','RandomForest','kNN','AdaBoost']
-	],
-	value='Annotation',
-	labelStyle={'display': 'inline-block'}
-)
-```
-2. Range Slider
-```python
-dcc.RangeSlider(
-	id='no-slider',
-	min=df['No'].min(),
-	max=df['No'].max(),
-	step=1,
-	marks={
-		1: 'Day 1',
-		2: 'Night 1',
-		3: 'Day 2',
-		4: 'Night 2'
-	},
-	value=[df['No'].min(), df['No'].max()]
-)
-```
+	1. RadioItem
+	```python
+	dcc.RadioItems(
+		id='RI',
+		options=[
+			{'label' : i, 'value': i} for i in ['Annotation','RandomForest','kNN','AdaBoost']
+		],
+		value='Annotation',
+		labelStyle={'display': 'inline-block'}
+	)
+	```
+	2. Range Slider
+	```python
+	dcc.RangeSlider(
+		id='no-slider',
+		min=df['No'].min(),
+		max=df['No'].max(),
+		step=1,
+		marks={
+			1: 'Day 1',
+			2: 'Night 1',
+			3: 'Day 2',
+			4: 'Night 2'
+		},
+		value=[df['No'].min(), df['No'].max()]
+	)
+	```
 - **Callback**		
 is use for updating the plot with the input data. In this case, we used RadioItem as 'RI' and Range Slider as 'no-slider' for the input data. For the output is a Graph as 'clustering'.
 ```python
