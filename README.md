@@ -99,7 +99,7 @@ pip install pandas
 	)
 	```
 - **Callback**		
-is use for updating the plot with the input data. For this example, we used RadioItem as 'RI' and Range Slider as 'no-slider' for the input data. For the output is a Graph as 'clustering'.
+is use for updating the plot with the input data. In this case, we used RadioItem as 'RI' and Range Slider as 'no-slider' for the input data. For the output is a Graph as 'clustering'.
 ```python
 @app.callback(
 	Output('clustering', 'figure'),
