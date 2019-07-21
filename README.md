@@ -53,6 +53,39 @@ pip install pandas
 
 ## Running the tests
 
+### Coding Style
+- Graph Bar
+```python
+    dcc.Graph(id='bar_plot',
+			figure=go.Figure
+			(
+				data=[
+					go.Bar(name='Actual', x=df['Annotation'], y=df['tAnnotation']),
+					go.Bar(name='RandomForest', x=df['RandomForest'], y=df['tRandomForest'], text=df['RF']),
+					go.Bar(name='kNN', x=df['kNN'], y=df['tkNN'], text=df['RF']),
+					go.Bar(name='AdaBoost', x=df['AdaBoost'], y=df['tAdaBoost'], text=df['RF'])
+					],
+					layout=go.Layout(barmode='group'
+						#yaxis = go.layout.YAxis(tickformat = '%')
+					)
+			
+			)
+		)
+```
+- Scatter Plot
+```python
+
+```
+- Callback
+Callback is use for updating the plot with the input data. For this example, we used RadioItem as 'RI' and Range Slider as 'no-slider' for the input data. For the output is a Graph as 'clustering'.
+```python
+@app.callback(
+	Output('clustering', 'figure'),
+	[Input('RI', 'value'),
+	 Input('no-slider', 'value')])
+def update_graph(selected_methods, r_slider):
+```
+
 ## Deployment
 ### Test & Score
 In here, we train the data with the best 3 models .
