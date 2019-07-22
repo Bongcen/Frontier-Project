@@ -19,7 +19,7 @@ The annotations are stored as 1 annotation per line with the addition of informa
 Filename;Annotation tag;Upper left corner X;Upper left corner Y;Lower right corner X;Lower right corner Y;Origin file;Origin frame number;Origin track;Origin track frame number
 
 ## Dataset used in this project: 
-Annotation file **frameAnnotationsBULB**
+[**frameAnnotationsBULB**](https://github.com/Bongcen/Frontier-Project/blob/master/Trained%20Dataset/frameAnnotationsBULB.csv)
  
 ## Prerequisites
 You'll need the following:
@@ -135,7 +135,10 @@ def update_graph(selected_methods, r_slider):
 
 ## Deployment
 ### Test & Score
-In here, we train the data with the best 3 models .
+In here, we train the data with the best 3 models:
+1. Random Forest
+2. kNN
+3. AdaBoost
 - The target of this Test & Score evaluation is the "Annotation" Class
 - We used K fold Cross validation with number of folds: 5
 - Stratified: rearrange the data in a way that each fold has a good representation of the whole dataset.
