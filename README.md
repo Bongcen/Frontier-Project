@@ -19,7 +19,8 @@ The annotations are stored as 1 annotation per line with the addition of informa
 Filename;Annotation tag;Upper left corner X;Upper left corner Y;Lower right corner X;Lower right corner Y;Origin file;Origin frame number;Origin track;Origin track frame number
 
 ## Dataset used in this project: 
-[**frameAnnotationsBULB**](https://github.com/Bongcen/Frontier-Project/blob/master/Trained%20Dataset/frameAnnotationsBULB.csv)
+[**frameAnnotationsBULB**](https://github.com/Bongcen/Frontier-Project/blob/master/Trained%20Dataset/frameAnnotationsBULB.csv).
+The data sampler already simplified with "fixed proportion of the data" at percentage of 15%. Also it has replicable sampling and stratify sample, which mean the data maintains sampling patterns and mimic the composition of the input dataset.
  
 ## Prerequisites
 You'll need the following:
