@@ -137,14 +137,14 @@ def update_graph(selected_methods, r_slider):
 ## Deployment
 ### Test & Score
 In here, we train the data with the best 3 models:
-1. Random Forest
-Random Forest Predict data using an ensemble of decision trees. At Random Forest properties, we limit the number of trees to 10 and use "Do not split subsets smaller than" to 5.
+1. **Random Forest**
+Predict data using an ensemble of decision trees. At Random Forest properties, we limit the number of trees to 10 and use "Do not split subsets smaller than" to 5.
 
-2. kNN
-KNN is one of 3 methods that we used in orange. It predict according to the nearest training instances. In this project, we set the number of neighbors or K at 5. We also use the Euclidean metric and Uniform weight.
+2. **kNN**
+is one of 3 methods that we used in orange. It predict according to the nearest training instances. In this project, we set the number of neighbors or K at 5. We also use the Euclidean metric and Uniform weight.
 
-3. AdaBoost
-Adaptive Boosting or AdaBoost is an ensemble meta-algorithm that combines weak learners and adapts to the ‘hardness’ of each training sample. It can be used with or without another machine learning. We set the number of estimators at 50 and learning rate at 1. It will determine to what extent the newly acquired information will override the old information (set to 0 = the agent will not learn anything, set to 1 = the agent considers only the most recent information) and for the classification algorithm we use SAMME.R (updates base estimator’s weight with probability estimates).
+3. **AdaBoost**
+Adaptive Boosting is an ensemble meta-algorithm that combines weak learners and adapts to the ‘hardness’ of each training sample. It can be used with or without another machine learning. We set the number of estimators at 50 and learning rate at 1. It will determine to what extent the newly acquired information will override the old information (set to 0 = the agent will not learn anything, set to 1 = the agent considers only the most recent information) and for the classification algorithm we use SAMME.R (updates base estimator’s weight with probability estimates).
 
 - The target of this Test & Score evaluation is the "Annotation" Class
 - We used K fold Cross validation with number of folds: 5
