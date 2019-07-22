@@ -24,7 +24,7 @@ The data sampler already simplified with "fixed proportion of the data" at perce
  
 ## Prerequisites
 You'll need the following:
-- [Orange](https://orange.biolab.si/download)
+- [Orange](https://orange.biolab.si/download)(option)
 - [Python Dash](https://dash.plot.ly/)
 - Pandas
 - Plotly
@@ -138,8 +138,14 @@ def update_graph(selected_methods, r_slider):
 ### Test & Score
 In here, we train the data with the best 3 models:
 1. Random Forest
+Predict using an ensemble of decision trees.
+
 2. kNN
+Predict according to the nearest training instances. 
+
 3. AdaBoost
+An ensemble meta-algorithm that combines weak learners and adapts to the ‘hardness’ of each training sample.
+
 - The target of this Test & Score evaluation is the "Annotation" Class
 - We used K fold Cross validation with number of folds: 5
 - Stratified: rearrange the data in a way that each fold has a good representation of the whole dataset.
