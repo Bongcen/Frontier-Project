@@ -58,10 +58,12 @@ pip install pandas
 
 ## Running the tests
 	1. Scatter Graph
-		You can set the slider at the above of the Graph to scale the size of data by the day.
+		- This Scatter plot will show the position of each number of the data with each annotation they have.
+		- You can set the slider at the above of the Graph to scale the size of data by the day.
 		Or you can choose the radioitems at the bottom of the Graph, to see which class data you want to be used.
 	2. Bar Graph
-		You can't do any input here.
+		- This Bar plot will show each annotation's sum in each actual's and predicteds' data.
+		- You can't do any input here.
 ![web](https://github.com/Bongcen/Frontier-Project/blob/master/Screenshots/Web.PNG)
 
 ### Coding Style
