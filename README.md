@@ -145,13 +145,15 @@ def update_graph(selected_methods, r_slider):
 In here, we train the data with the best 3 models:
 1. **Random Forest**
 Predict data using an ensemble of decision trees. At Random Forest properties, we limit the number of trees to 10 and use "Do not split subsets smaller than" to 5. The [Random Forest](https://docs.biolab.si//3/visual-programming/widgets/model/randomforest.html) widget that we use is supplied by orange data mining tools.
+>![Random Forest](https://github.com/Bongcen/Frontier-Project/blob/master/Screenshots/RF.PNG)
 
 2. **kNN**
 is one of 3 methods that we used in orange. It predict according to the nearest training instances. In this project, we set the number of neighbors or K at 5. We also use the Euclidean metric and Uniform weight. The kNN widget uses the [kNN algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) that searches for k closest training examples in feature space and uses their average as prediction.
-
+>![kNN](https://github.com/Bongcen/Frontier-Project/blob/master/Screenshots/kNN.PNG)
 
 3. **AdaBoost**
 Adaptive Boosting is an ensemble meta-algorithm that combines weak learners and adapts to the ‘hardness’ of each training sample. It can be used with or without another machine learning. We set the number of estimators at 50 and learning rate at 1. It will determine to what extent the newly acquired information will override the old information (set to 0 = the agent will not learn anything, set to 1 = the agent considers only the most recent information) and for the classification algorithm we use SAMME.R (updates base estimator’s weight with probability estimates). The [AdaBoost](https://docs.biolab.si//3/visual-programming/widgets/model/adaboost.html) widget, that we use for modeling in orange is formulated by [Yoav Freund and Robert Schapire](https://cseweb.ucsd.edu/%7Eyfreund/papers/IntroToBoosting.pdf).
+>![AdaBoost](https://github.com/Bongcen/Frontier-Project/blob/master/Screenshots/AdaBoost.PNG)
 
 - The target of this Test & Score evaluation is the "Annotation" Class
 - We used K fold Cross validation with number of folds: 5
